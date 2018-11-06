@@ -23,7 +23,7 @@ li a {
     color: #666;
 }
 
-ul {
+.link {
     position: fixed;
     top: 0;
 	width: 100%;
@@ -38,8 +38,9 @@ ul {
 	grid-template-areas: 
 		"nav nav nav"
 		"header header header"
+		"title title title"
 		"main main main"
-		"footer footer footer";
+		"footer . .";
 	grid-gap: 15px 10px;
 }
 
@@ -54,10 +55,105 @@ body {
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
 	grid-template-areas: 
+		"nav nav"
 		"header header"
+		"title title"
 		"main main"
 		"main main"
-		"nav footer";
+		"footer footer";
 	grid-gap: 15px 10px;
 	}
+}
+
+.main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"game0 game1 game2 game3"
+		"game4 game5 game6 game7"
+		"game8 game9 game10 game11"
+		"game12 game13 game14 game15";
+	grid-gap: 15px 10px;
+}
+
+.game0 {
+	padding: 10px;
+	border: 1px solid black;
+    background-color: rgb(65, 64, 64);
+}
+.game1 {
+	padding: 10px;
+	border: 1px solid black;
+    background-color: rgb(65, 64, 64);
+}
+.game2 {
+	padding: 10px;
+	border: 1px solid black;
+    background-color: rgb(65, 64, 64);
+}
+.game3 {
+	padding: 10px;
+	border: 1px solid black;
+    background-color: rgb(65, 64, 64);
+}
+.game4 {
+	padding: 10px;
+	border: 1px solid black;
+    background-color: rgb(65, 64, 64);
+}
+.game5 {
+	padding: 10px;
+	border: 1px solid black;
+    background-color: rgb(65, 64, 64);
+}
+.game6 {
+	padding: 10px;
+	border: 1px solid black;
+    background-color: rgb(65, 64, 64);
+}
+.game7 {
+	padding: 10px;
+	border: 1px solid black;
+    background-color: rgb(65, 64, 64);
+}
+.game8 {
+	padding: 10px;
+	border: 1px solid black;
+    background-color: rgb(65, 64, 64);
+}
+.game9 {
+	padding: 10px;
+	border: 1px solid black;
+    background-color: rgb(65, 64, 64);
+}
+.game10 {
+	padding: 10px;
+	border: 1px solid black;
+    background-color: rgb(65, 64, 64);
+}
+.game11 {
+	padding: 10px;
+	border: 1px solid black;
+    background-color: rgb(65, 64, 64);
+}
+.game12 {
+	padding: 10px;
+	border: 1px solid black;
+    background-color: rgb(65, 64, 64);
+}
+.game13 {
+	padding: 10px;
+	border: 1px solid black;
+    background-color: rgb(65, 64, 64);
+}
+.game14 {
+	padding: 10px;
+	border: 1px solid black;
+    background-color: rgb(65, 64, 64);
+}
+.game15 {
+	padding: 10px;
+	border: 1px solid black;
+    background-color: rgb(65, 64, 64);
 }
