@@ -11,7 +11,24 @@
 				<img src="images/djhockey.png">	
 			</div>
 			<div class="title">
-				<h2>Todays Games</h2>   								<!--todays date needed via api "gameDate": "2018-10-29T23:00:00Z" -->
+				<h2>Todays Games</h2>
+				<p id="demo"></p>
+					<script>
+						date = new Date();
+						year = date.getFullYear();
+						month = date.getMonth()+1;
+						dt = date.getDate();
+
+						if (dt < 10) {
+  						dt = '0' + dt;
+						}
+						if (month < 10) {
+  							month = '0' + month;
+						}
+
+						document.getElementById("demo").innerHTML = (year+'-' + month + '-'+dt);
+					</script>
+																		<!--todays date needed via api "gameDate": "2018-10-29T23:00:00Z" -->
 			</div>
 			<div class="main">                                          <!-- each "game" needs = away team icon / score @ score / home team icon-->
 				<div class="game0">game0</div> 							<!-- below team icon   = away team name   (empty space)   home team name-->
